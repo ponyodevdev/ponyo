@@ -8,31 +8,34 @@
 </head>
 <body>
     <form id="Login" class="hidden">
-       <input required maxlength="10" type="text" id="name" placeholder="당신의 이름을 적어주세요."/>
-       <!-- <input type="submit" value="Login" /> -->
-       <input type="submit" value="Login" />
+        <input required maxlength="10" type="text" id="name" placeholder="당신의 이름을 적어주세요."/>
+        <!-- <input type="submit" value="Login" /> -->
+        <input type="submit" value="Login" />
     </form>
-       <h1 id="h1" class="hidden"></h1>
-       
-       <h2 id="clock">00:00:00</h2>
+    <h1 id="h1" class="hidden"></h1>
 
-       <div id="quote">
-            <span>명언</span>
-            <span>작가</span>
-       </div>
-       <div id="weather">
+    <!-- Clock Section -->
+    <h2 id="clock">00:00:00</h2>
+
+    <!-- Quotes Section -->
+    <div id="quote">
+        <span id="quoteText">명언</span>
+        <span id="author">작가</span>
+    </div>
+
+    <!-- Weather Section -->
+    <div id="weather">
         <span>날씨</span>
-      
         <span>지역</span>
-       </div>
+    </div>
 
-       <!--toDo 리스트-->
-       <input id="toDo" type="text">
-       <button id="addButton">추가</button>
-       
-       <div id="toDoList">
+    <!-- ToDo List Section -->
+    <input id="toDo" type="text">
+    <button id="addButton">추가</button>
 
-    
+    <div id="toDoList"></div>
+
+    <!-- JavaScript Files -->
     <script src="js/greeting.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/quotes.js"></script>
